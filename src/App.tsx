@@ -130,7 +130,7 @@ export default function App() {
             极速加载的轻量级 3D 模型查看器
           </p>
           <p className="text-zinc-400 max-w-md mx-auto text-sm md:text-base">
-            专为游戏与影视行业打造。支持多种主流 3D 模型格式，完美适配 Windows 与 macOS 双端系统，为您带来流畅的 AI 生成资产预览体验。
+            支持多种主流 3D 模型格式，OBJ, GLB, FBX，适配 Windows 与 macOS 双端系统，秒级预览3D资产。
           </p>
         </div>
 
