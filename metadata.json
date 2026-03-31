@@ -1,0 +1,5 @@
+{
+  "name": "Lite Viewer",
+  "description": "A landing page for Lite Viewer, a desktop 3D model viewer for Windows and Mac.",
+  "requestFramePermissions": []
+}
