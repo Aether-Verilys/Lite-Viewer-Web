@@ -6,6 +6,9 @@ import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 
+const WINDOWS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-win-latest.exe';
+const MACOS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-mac-latest.dmg';
+
 const FloatingModelCard = ({ src, title, tags, icon: Icon, className, delay }: any) => (
   <motion.div
     initial={{ y: 0, opacity: 0 }}
@@ -136,15 +139,25 @@ export default function App() {
 
         {/* Download Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-          <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#F9CF00] text-zinc-950 hover:bg-[#F9CF00]/90 px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(249,207,0,0.3)] border border-[#F9CF00]/50">
+          <a
+            href={WINDOWS_DOWNLOAD_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#F9CF00] text-zinc-950 hover:bg-[#F9CF00]/90 px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(249,207,0,0.3)] border border-[#F9CF00]/50"
+          >
             <Monitor className="w-5 h-5" />
             <span>Windows 版下载</span>
-          </button>
+          </a>
           
-          <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/5 text-white hover:bg-white/10 border border-white/10 px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 backdrop-blur-md">
+          <a
+            href={MACOS_DOWNLOAD_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/5 text-white hover:bg-white/10 border border-white/10 px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 backdrop-blur-md"
+          >
             <Apple className="w-5 h-5" />
             <span>macOS 版下载</span>
-          </button>
+          </a>
         </div>
       </main>
 
