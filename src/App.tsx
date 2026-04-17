@@ -8,6 +8,7 @@ import img4 from '../assets/img4.jpg';
 
 const WINDOWS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-win-latest.exe';
 const MACOS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-mac-latest.dmg';
+const INSTALLATION_DOC_URL = 'https://a9ihi0un9c.feishu.cn/wiki/Kq92wjj34iBZYXkM5v1cHbM7nih';
 
 const FloatingModelCard = ({ src, title, tags, icon: Icon, className, delay }: any) => (
   <motion.div
@@ -118,7 +119,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-3">
             <div className="flex flex-wrap items-center gap-3 justify-center">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
-                Lite Viewer
+                Lite 3D Viewer
               </h1>
               <span className="px-3 py-1 text-xs font-medium bg-[#F9CF00]/10 text-[#F9CF00] border border-[#F9CF00]/20 rounded-full backdrop-blur-md">
                 Alpha 测试版
@@ -133,7 +134,7 @@ export default function App() {
             极速加载的轻量级 3D 模型查看器
           </p>
           <p className="text-zinc-400 max-w-md mx-auto text-sm md:text-base">
-            支持多种主流 3D 模型格式，OBJ, GLB, FBX，适配 Windows 与 macOS 双端系统，秒级预览3D资产。
+            支持多种主流 3D 模型格式，OBJ, GLB, FBX，适配 Windows 与 macOS 双端系统，秒级预览和分析3D资产。
           </p>
         </div>
 
@@ -157,6 +158,17 @@ export default function App() {
           >
             <Apple className="w-5 h-5" />
             <span>macOS 版下载</span>
+          </a>
+        </div>
+
+        <div className="pt-2">
+          <a
+            href={INSTALLATION_DOC_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center text-sm text-zinc-300 hover:text-[#F9CF00] underline underline-offset-4 decoration-white/20 hover:decoration-[#F9CF00]/60 transition-colors"
+          >
+            查看安装文档
           </a>
         </div>
       </main>
