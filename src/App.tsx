@@ -133,7 +133,7 @@ export default function App() {
             极速加载的 3D 模型查看器
           </p>
           <p className="text-zinc-400 max-w-md mx-auto text-sm md:text-base">
-            支持 OBJ, GLB, FBX, STL, USD, PXM, 3MF 等主流 3D 模型格式，适配 Windows 与 macOS 双端系统，毫秒级预览3D资产。
+            支持 OBJ, GLB, FBX, STL, USD, 3MF 等主流 3D 模型格式，适配 Windows 与 macOS 双端系统，毫秒级预览3D资产
           </p>
         </div> 
 
@@ -164,7 +164,7 @@ export default function App() {
       {/* Bottom spacer & Footer */}
       <div className="flex-1 flex flex-col justify-end w-full relative z-10">
         <footer className="text-center text-zinc-500 text-sm pb-4 drop-shadow-md">
-          <p>开发与版权归属 &copy; {new Date().getFullYear()} Tripo 3D. All rights reserved.</p>
+          <p>版权归属 &copy; {new Date().getFullYear()} Tripo 3D. All rights reserved.</p>
         </footer>
       </div>
     </div>
