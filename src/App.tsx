@@ -121,7 +121,7 @@ export default function App() {
                 Tripo Orbit
               </h1>
               <span className="px-3 py-1 text-xs font-medium bg-[#F9CF00]/10 text-[#F9CF00] border border-[#F9CF00]/20 rounded-full backdrop-blur-md">
-                Beta 测试版
+                Alpha 测试版
               </span>
             </div>
           </div>
@@ -130,12 +130,12 @@ export default function App() {
         {/* Description */}
         <div className="space-y-3">
           <p className="text-lg md:text-xl text-zinc-200 max-w-lg mx-auto leading-relaxed font-medium">
-            极速加载的轻量级 3D 模型查看器
+            极速加载的 3D 模型查看器
           </p>
           <p className="text-zinc-400 max-w-md mx-auto text-sm md:text-base">
-            支持 OBJ, GLB, FBX, STL, USD, PXM, 3MF 等主流 3D 模型格式，适配 Windows 与 macOS 双端系统，秒级预览3D资产。
+            支持 OBJ, GLB, FBX, STL, USD, PXM, 3MF 等主流 3D 模型格式，适配 Windows 与 macOS 双端系统，毫秒级预览3D资产。
           </p>
-        </div>
+        </div> 
 
         {/* Download Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
