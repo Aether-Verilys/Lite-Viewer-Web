@@ -6,8 +6,8 @@ import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 
-const WINDOWS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-win-latest.exe';
-const MACOS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/lite-viewer/lite-viewer-mac-latest.dmg';
+const WINDOWS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/tripo-orbit/tripo-orbit-win-latest.exe';
+const MACOS_DOWNLOAD_URL = 'https://tripo-public.tripo3d.ai/plugins/tripo-orbit/tripo-orbit-mac-latest.dmg';
 
 const FloatingModelCard = ({ src, title, tags, icon: Icon, className, delay }: any) => (
   <motion.div
